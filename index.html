@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE ALUMNOS</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="card text-bg-ligth mb-3">
+            <div class="card-header">
+                <strong>MANTENIMIENDO DE FORMULARIO DE ALUMNOS</strong>
+                
+            </div>
+            <div class="card-body">
+                <div class="card text-ORANGE bg-secondary mb-3">
+                    <div class="card-header">
+                        <strong>REGISTRO / ACTUALIZAR ALUMNOS</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="">CODIGO ESTUDIANTE</label>
+                                <input id="idCodigo" class="form-control" type="text">
+
+                            </div>
+                            <div class="col-4">
+                                <label for="">NOMBRES</label>
+                                <input id="nombres" class="form-control" type="text">
+                            </div>
+                            <div class="col-4">
+                                <label for="">APELLIDOS</label>
+                                <input id="apellidos" class="form-control" type="text">
+                            </div>
+                            <div class="col-4">
+                                <label for="">EDAD</label>
+                                <input id="edad" class="form-control" type="text">
+                            </div>
+                            <div class="col-4">
+                                <label for="">TELEFONO</label>
+                                <input id="telefono" class="form-control" type="text">
+                            </div>
+                            <div class="col-4">
+                                <label for="">CORREO</label>
+                                <input  id="correo" class="form-control" type="text">
+                            </div>
+                            <div class="col-4">
+                                <label for="">DNI</label>
+                                <input id="dni" class="form-control" type="text">
+                            </div>
+
+                            <div class="col-4">
+                                <br>
+                                <button onclick="Guardar()" class="btn btn-lg btn-info">
+                                    <i class="fas fa-save"></i> 
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>CODIGO ESTUDIANTE</th>
+                                        <th>NOMBRES</th>
+                                        <th>APELLIDOS</th>
+                                        <th>EDAD</th>
+                                        <th>TELEFONO</th>
+                                        <th>CORREO</th>
+                                        <th>DNI</th>
+                                        <th>
+                                            <BUtton onclick="nuevoItem()" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-plus"></i>
+                                                
+                                            </BUtton>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contenidoTabla">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2225456</td>
+                                        <td>Samuel</td>
+                                        <td>Ruiz Moncebay</td>
+                                        <td>20</td>
+                                        <td>956235684</td>
+                                        <td>i2225456@continental.edu.pe</td>
+                                        <td>78596412</td>
+                                        <td>
+                                            <button onclick="EditarItem(1)" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button onclick="EliminarItem(1)" class="btn btn-sm btn-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
